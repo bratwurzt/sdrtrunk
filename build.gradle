@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.sdrtrunk'
+version = '0.3.0-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.2.1'
+    compile group: 'com.jidesoft', name: 'jide-oss', version:'3.5.15'
+    compile group: 'org.usb4java', name: 'libusb4java', version:'1.2.0'
+    compile group: 'org.usb4java', name: 'usb4java', version:'1.2.0'
+    compile group: 'org.usb4java', name: 'usb4java-javax', version:'1.2.0'
+    compile group: 'com.miglayout', name: 'miglayout-swing', version:'4.1'
+    compile group: 'javax.usb', name: 'usb-api', version:'1.0.2'
+    compile group: 'com.github.wendykierp', name: 'JTransforms', version:'3.0'
+    compile group: 'pl.edu.icm', name: 'JLargeArrays', version:'1.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.6.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.21'
+    compile group: 'org.slf4j', name: 'jcl-over-slf4j', version:'1.7.21'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version:'2.6.1'
+    compile group: 'commons-io', name: 'commons-io', version:'2.5'
+    compile group: 'net.coderazzi', name: 'tablefilter-swing', version:'5.2.2'
+}
